@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,400&display=swap');
+
+:root {
+    --cor-destaque:#3BB934 ; /* define a variável */
+    --fonte-lato: 'Lato', sans-serif;
+    --fonte-principal: 'Montserrat', sans-serif;
+  }
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Conteudos que estão presentes em todas as paginas, com excessao dos menus*/
+.titulo-pagina{
+  width: fit-content;
+  text-align: center;
+  font-size: 2rem;
+  margin: auto;
+  margin-top: 0px;
+  margin-left: 0px;
+  font-family: var(--fonte-lato);
+  letter-spacing: 0.1rem;
+  position: absolute;
+  left: 13px;
+  top: -25px;
+  background-color: aliceblue;
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+  color: #3BB934;
+  
+}
+.conteudo-cards{
+  display: flex;
+  flex-grow: 1;
+  width: 75%;
+  height: 87vh;
+  float: right;
+  margin-top: 8rem;
+  margin-right: 8rem;
+  flex-direction: row;
+  column-gap: 3rem;
+  position: relative;
+  flex-wrap: wrap;
+  border: 1px solid #252A41;
+  border-radius: 20px;
+  padding: 1rem;
+  justify-items: flex-start;
+  padding-top: 1rem;
+
+}
+
+.informacao{
+font-family: var(--fonte-principal);
+padding: 1rem 1rem;
+font-size: small;
+font-weight: 600;
+
+}
+/* Trecho de codigo para estilizar o meu tittle, no momento em que o mouse estiver por cima do icone do menu */
+  a[title]:hover::after {
+    content: attr(title);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+  [aria-label] {
+    position: relative;
+    }
+    
+    [aria-label]::after {
+    content: attr(aria-label);
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 180%;
+    z-index: 5000;
+    width: min-content;
+    pointer-events: none;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: .5em;
+    color:aliceblue;
+    background-color: #252A41;
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    border-radius: 10px;
+    }
+    
+    [aria-label]:hover::after {
+    display: block;
+    }
+    
+    /* Estilização do botão sair no menu lateral*/
+    
+   #sair{
+    position: absolute;
+    bottom: 2.5rem;
+    background-color: #333;
+    width: 100%;
+    height: 10%;
+    display: flex;
+   }
+   #icon-logout{
+      font-size: 2rem;
+      padding-top: 70%;
+      padding-left: 40%;
+      margin: auto;
+      justify-content: center;
+      color: aliceblue;
+      align-items: center;
+
+   }
+  
+

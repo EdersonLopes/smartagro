@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,400&display=swap');
+
+:root {
+    --cor-destaque:#3BB934 ; /* define a variável */
+  }
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: #252A41;
+    height: 65px;
+    z-index: 10;
+    
+
+}
+header.nav-menu>ul{
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    
+    
+
+}
+header.nav-menu>ul>li{
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    color: white;
+}
+header.nav-menu>ul>li>a{
+    text-decoration: none;
+    color: white;
+
+}
+
+header.nav-menu>ul>li:hover>a{
+    font-size: larger;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    font-weight: bold;
+    
+}
+.menu {
+    display: none;
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: #252A41;
+    position: static;
+    left: 0;
+    top: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#menu-main{
+    background-color: #252A41;
+}
+/* rodape do menu lateral */
+#footer-menu-lateral{
+    color: #555;
+    position: relative;
+    left: 79%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+    display: block;
+    width: min-content;
+    padding-top: 6px;
+    margin-top: 6px;
+    
+    
+}
+.material-symbols-outlined{
+    font-size: 1.5rem;
+    color: #555;
+
+}
+
+#footer-menu-lateral:hover{
+    color: #F1D302; 
+    text-shadow: 0 0 20px , 0 0 40px #333, 0 0 60px #333, 0 0 80px #333;
+    
+}
+
+#empresa-nome{
+    position: relative;
+    top: 0;
+    padding-top: 15%;
+    padding-bottom: 20%;
+    border-bottom: none;
+}
+.info-empresa{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.info-empresa img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+                /* criando versão menor do menu*/
+.menu-2{
+    position: fixed;
+    padding-top: 3rem;
+    width:65px;
+    height: 100%;
+    background-color: #252A41;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    row-gap: 8px;
+    cursor: pointer;
+
+
+}
+.conteudo-menu-2{
+    font-size: 3.5rem;
+    padding-top: 40%;
+
+}
+.conteudo-menu-2>.material-symbols-outlined{
+    font-size: 1.8rem;
+    color: #FDFFFC;
+
+}
+
+
+.conteudo-menu-2:hover{
+    font-size: 3.6rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    transform: scale(1.3);
+
+
+}
+.sub-menu {
+    display: none;
+  }
+  

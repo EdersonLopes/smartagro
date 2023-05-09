@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,400&display=swap');
+
+:root {
+    --cor-destaque:#3BB934 ; /* define a variável */
+    --fonte-lato: 'Lato', sans-serif;
+    --fonte-principal: 'Montserrat', sans-serif;
+  }
+*{
+    padding: 0;
+    margin: 0;
+  
+}
+
+
+/* Cadastro de funcionarios*/
+body{
+  background-color: aliceblue;
+
+
+
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 2rem;
+  }
+  
+  label.item-flex {
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: var(--fonte-principal);
+  }
+  
+  input.item-flex {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 10px;
+    border-top: none;
+    border-left: none;
+    margin-right: none;
+    background-color: #d1efb559;
+    
+  }
+  
+  button.item-flex {
+    background-color: #3BB934;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    height: auto;
+  }
+  
+  button.item-flex:hover {
+    background-color: #3e8e41;
+  }
+ main.Smart{
+    font-family: 'Montserrat', sans-serif;
+
+ }  
+ #salario{
+    width: 70px;
+ }
+ .item-flex{
+    flex-basis: calc(50% - 30px);
+  /* 30px é o espaço entre os itens */
+
+ }
+ 

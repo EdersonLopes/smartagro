@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Agro</title>
+    <script src="https://kit.fontawesome.com/e603deef4d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style-cadastro.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-menus.css">
+    <link rel="stylesheet" href="style-cards-2.css">
+    <link rel="stylesheet" href="style-cards.css">
+</head>
+<body id="">
+  <header class="nav-menu" id="menu-main">
+    <ul>
+      <li><a href="#">Cadastros</a></li>
+      <li><a href="#">Projetos</a></li>
+      <li><a href="#">Financeiro</a></li>
+      <li><a href="funcionarios.html">Funcionarios</a>
+        <ul class="sub-menu">
+          <li><a href="#">Adicionar funcionário</a></li>
+          <li><a href="#">Editar funcionário</a></li>
+          <li><a href="#">Excluir funcionário</a></li>
+        </ul>
+      </li>
+    </ul>   
+  </header>
+  
+
+<div class="menu">
+<ul>
+    <li id="empresa-nome" class="info-empresa">
+        <img src="imagens/smart.png" alt="Logo da empresa logada no sistema">    
+        <a href="#">Nome da Empresa: </a></li>
+    
+        <li><a href="#">Serviços em aberto</a></li>
+    <li><a href="#">Serviços aguardando aprovação</a></li>
+    <li><a href="#">Serviços aguardando pagamento</a></li>
+    <li><a href="#">Serviços fechados</a></li>
+    <li><a href="#">Suporte tecnico</a></li>
+</ul> 
+<div id="footer-menu-lateral">
+<span class="material-symbols-outlined">logout </span>
+    <p>Sair</p>
+</div> 
+</div>
+<div class="menu-2">
+    <a href="main.html" aria-label="Serviços em Abertos">
+      <div class="conteudo-menu-2"><span class="material-symbols-outlined">
+          folder_open
+          </span></div>
+    </a>
+    <a href="serviços-em-aprovação" aria-label="Serviços Aguardando Aprovação">
+      <div class="conteudo-menu-2"><span class="material-symbols-outlined">
+          pending
+          </span></div>
+    </a>
+    <a href="serviços-aguardando-pagamentos" aria-label="Serviços Aguardando Pagamentos">
+      <div class="conteudo-menu-2"><span class="material-symbols-outlined">
+          currency_exchange
+          </span></div>
+    </a>
+    <a href="serviços-fechados" aria-label="Serviços Finalizados">
+      <div class="conteudo-menu-2"><span class="material-symbols-outlined">
+          preliminary
+          </span></div>
+    </a>      
+    <a href="suporte-tecnico" aria-label="Fale conosco">
+      <div class="conteudo-menu-2"><span class="material-symbols-outlined">
+          support_agent
+          </span></div>
+    </a>
+
+            </div>
+            <!-- Menu principal -->
+
+
+
+
+
+
+
+    <main class="conteudo-cards" id="cadastro-funcionarios">
+      <h1 class="titulo-pagina">Cadastro de Funcionarios</h1>
+      <p class="informacao">Nesta página, você pode cadastrar funcionários e atribuí-los a serviços. Isso torna a gestão mais eficiente e organizada. Para cadastrar um funcionário, preencha todos os campos obrigatórios com informações precisas e atualizadas, como nome, CPF, endereço, telefone, e-mail, cargo e salário. Certifique-se de verificar as informações antes de enviar o formulário. Se precisar de ajuda, contate o suporte técnico.</p>
+        <form id="funcionarios">
+            <label for="nome" class="item-flex">Nome do funcionário:</label>
+            <input type="text" id="nome" name="nome" required class="item-flex">
+          
+            <label for="cpf" class="item-flex">CPF:</label>
+            <input type="text" id="cpf" name="cpf" class="item-flex" required>
+          
+            <label for="endereco" class="item-flex">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" class="item-flex" required>
+          
+            <label for="telefone" class="item-flex">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" class="item-flex" required>
+          
+            <label for="email" class="item-flex">Email:</label>
+            <input type="email" id="email" name="email" class="item-flex" required>
+          
+            
+          
+            <div id="container-flex">
+              <label for="cargo" class="item-flex">Cargo:</label>
+              <input type="text" id="cargo" name="cargo" class="item-flex" required>
+              
+              <label for="salario">Salário:</label>
+              <input type="number" id="salario" name="salario" class="item-flex" required>
+              <br>
+              
+              
+            </div>
+            <button type="submit" class="item-flex">Enviar</button>
+          </form>
+          
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+      var funcionarios = document.querySelector('a[href="funcionarios.html"]');
+var subMenu = funcionarios.nextElementSibling;
+
+funcionarios.addEventListener('click', function(event) {
+  event.preventDefault();
+  subMenu.style.display = subMenu.style.display === 'none' ? 'block' : 'none';
+});
+
+    </script>
+</body>
+
+</html>
