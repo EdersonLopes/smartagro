@@ -107,7 +107,9 @@ input#botao:hover{
     background-color: aliceblue;
 }
 
-    
+a#info{
+    all: initial;
+}  
     
       
     /* efeito neon */
