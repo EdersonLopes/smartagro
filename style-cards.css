@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,500;0,700;1,300;1,400;1,500;1,900&display=swap');
 :root {
     --cor-destaque:#3BB934 ; /* define a variável */
     --fonte-lato: 'Lato', sans-serif;
@@ -116,4 +116,116 @@ font-weight: 600;
 
    }
   
+ 
+    /* Estilização da pagina inicial do financeiro, usando Display Grid*/
+    #financeiro-main{
+      margin-top: 100px;
+      background-color: #252A41;
 
+    }
+    .pai-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Define 4 colunas */
+      grid-gap: 10px; /* Define o espaçamento entre os grids */
+      width: 70%;
+      
+      margin: auto;
+      margin-top: 3%;
+      margin-left: 15%;
+      margin-right: 15%;
+    
+
+     
+    }
+    
+    .grid-item {
+    
+      padding: 10px;
+      height: 220px;
+      width: 200px;
+      border-radius: 30px;
+      padding-top: 3em;
+      background-color: #DCD6F7;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3), 0px 4px 15px rgba(0, 0, 0, 0.2) inset;
+    }
+    .grid-item:hover{
+      transform: scale(1.01);
+      cursor: pointer;
+    }
+    
+    .flex-container {
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 53%;
+      width: 200px;
+     font-family: 'Nunito', sans-serif;
+     font-weight: 900;
+     font-size: 1.3rem;
+     letter-spacing: 0.01rem;
+    }
+    
+    .flex-item {
+      font-family: 'Nunito', sans-serif;
+      color: #252A41;
+      text-transform: uppercase;
+      position: relative;
+      align-items: center;
+      width: 80%;
+      height: 39%;
+      padding: 0.1em;
+      bottom: 40px;
+       
+      text-shadow:2px 2px 4px rgba(0, 0, 0, 0.3);
+  
+    }
+   .flex-item>.material-symbols-outlined{
+    font-size: 3.0rem;
+    color:#333;
+
+
+    }
+    #flex-1{
+      margin-left: 0px;
+      border-left: 3px solid #65655E;
+      border-radius: 50%;
+      background-color:#252A41;
+      color: #DCD6F7;
+      font-family: var(--fonte-principal);
+      font-size: 1.5rem;
+      height: 20%;
+      border-radius: 0px;
+      text-align: start;
+      padding-top: 0px;
+      padding-right: 70px;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      box-shadow: none;
+
+    }
+    #flex-5{
+      position: relative;
+      height: 380px;
+      width: 90%;
+      margin-top: 0px;
+      top: -160px;
+      left: 7px;
+    }
+    .grid-item>.flex-container>#periodo-grid{
+      font-size: 1.6rem;
+      
+    }
+    .grid-item>#conteudo-5{
+      padding-top: 85%;
+      height: min-content;
+
+      
+    }
+    #flex-8{
+      font-size: medium;
+    }
+    .grid-item>.flex-container>#relatorio-financeiro{
+      font-size: 1.1rem;
+
+    }
