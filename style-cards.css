@@ -120,7 +120,7 @@ font-weight: 600;
     /* Estilização da pagina inicial do financeiro, usando Display Grid*/
     #financeiro-main{
       margin-top: 100px;
-      background-color: #252A41;
+      background-color: aliceblue;
 
     }
     .pai-grid {
@@ -143,10 +143,10 @@ font-weight: 600;
       padding: 10px;
       height: 220px;
       width: 200px;
-      border-radius: 30px;
+      border-radius: 20px;
       padding-top: 3em;
-      background-color: #DCD6F7;
-      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3), 0px 4px 15px rgba(0, 0, 0, 0.2) inset;
+      background-color: #252A41;
+      
     }
     .grid-item:hover{
       transform: scale(1.01);
@@ -158,17 +158,17 @@ font-weight: 600;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 53%;
+      padding-top: 75%;
       width: 200px;
      font-family: 'Nunito', sans-serif;
-     font-weight: 900;
-     font-size: 1.3rem;
+     font-weight: lighter;
+     font-size: 1.1rem;
      letter-spacing: 0.01rem;
     }
     
     .flex-item {
       font-family: 'Nunito', sans-serif;
-      color: #252A41;
+      color: #DCD6F7;
       text-transform: uppercase;
       position: relative;
       align-items: center;
@@ -182,7 +182,7 @@ font-weight: 600;
     }
    .flex-item>.material-symbols-outlined{
     font-size: 3.0rem;
-    color:#333;
+    color:aliceblue;
 
 
     }
@@ -190,8 +190,8 @@ font-weight: 600;
       margin-left: 0px;
       border-left: 3px solid #65655E;
       border-radius: 50%;
-      background-color:#252A41;
-      color: #DCD6F7;
+      background-color:aliceblue;
+      color: #252A41;
       font-family: var(--fonte-principal);
       font-size: 1.5rem;
       height: 20%;
